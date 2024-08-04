@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para cadastro de restaurante no sistema Bombar.">
+    <meta name="keywords" content="restaurante, cadastro, Bombar">
+    <meta name="author" content="bombar">
+    <title>Cadastro de Restaurante - Bombar</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/pages/Cliente/Cliente.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bombar</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="icon-back-page">
+            <a href="/pages/AreaRestaurante/AreaRestaurante.html" class="icon-back" aria-label="Voltar para a página inicial">
+                <i class="bi bi-arrow-left"></i>
+                <span class="visually-hidden">Voltar</span>
+            </a>
+        </div>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Informações do cliente</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome do item">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <textarea name="email" id="email" placeholder="E-mail"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">Celular:</label>
+                        <input type="text" id="celular" name="celular" placeholder="Celular" >
+                    </div>
+                    <div class="form-group">
+                        <label for="pagamento">Forma de pagamento:</label>
+                        <select name="restaurante" id="restaurante" >
+                            <option disabled selected>Selecione a forma de pagamento</option>
+                            <option value="debito">Débito</option>
+                            <option value="credito">Credito</option>
+                            <option value="pix">Pix</option>
+                            <option value="dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="restaurante">Restaurante:</label>
+                        <select name="restaurante" id="restaurante" >
+                            <option value="" disabled selected>Selecione o restaurante</option>
+                            <option value="bombar">Bombar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <a href="/pages/PedidoCardapio/PedidoCardapio.html">Avançar</a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurante App</p>
+    </footer>
+</body>
+
+</html>

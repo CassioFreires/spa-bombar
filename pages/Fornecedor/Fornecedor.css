@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    flex: 1; /* Faz o main crescer para ocupar o espaço restante */
+    padding: 20px;
+    height: 100%;
+    margin-top: 90px;
+    margin-bottom: 80px;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+.icon-back-page {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.icon-back {
+    color: #333;
+}
+
+.box {
+    margin: 10px;
+    margin-top: 6rem;
+    width: 220px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.box:hover {
+    background-color: #cecece;
+    transition: background-color 1.2s;
+}
+.box a {
+    text-decoration: none;
+    color: #333;
+    width: 220px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main h2 {
+    color: #333;
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ul-1 li {
+    margin: 10px 0;
+    margin: 5px;
+}
+
+.ul-1 li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ul-1 li a:hover {
+    background-color: #ccc;
+}
+
+.ul-2 li {
+    margin: 10px 0;
+    margin: 5px;
+}
+
+.ul-2 li a {
+    text-decoration: none;
+    color: #ddd;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ul-2 li a:hover {
+    background-color: #525252;
+}
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

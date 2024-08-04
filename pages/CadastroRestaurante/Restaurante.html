@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário para cadastro de restaurante no sistema Bombar.">
+    <meta name="keywords" content="restaurante, cadastro, Bombar">
+    <meta name="author" content="Bombar">
+    <title>Cadastro de Restaurante</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/pages/CadastroRestaurante/Restaurante.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bombar</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="icon-back-page">
+            <a href="/index.html" class="icon-back" aria-label="Voltar para a página inicial">
+                <i class="bi bi-arrow-left"></i>
+                <span class="visually-hidden">Voltar</span>
+            </a>
+        </div>
+        <section>
+            <form action="#" method="post" aria-labelledby="form-title">
+                <fieldset>
+                    <legend id="form-title">Informações do Restaurante</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome do restaurante</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome do restaurante" required>
+
+                        <label for="razao_social">Razão social</label>
+                        <input type="text" id="razao_social" name="razao_social" placeholder="Razão social" required>
+
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required>
+
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descrição" required></textarea>
+                    </div>
+
+                    <button type="submit">Salvar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante App</p>
+    </footer>
+</body>
+
+</html>

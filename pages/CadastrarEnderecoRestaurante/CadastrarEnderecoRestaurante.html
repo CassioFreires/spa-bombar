@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para cadastro de restaurante no sistema Bombar.">
+    <meta name="keywords" content="restaurante, cadastro, Bombar">
+    <meta name="author" content="bombar">
+    <title>Cadastro de Restaurante - Bombar</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/pages/CadastrarEnderecoRestaurante/CadastrarEnderecoRestaurante.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bombar</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="icon-back-page">
+            <a href="/pages/AreaRestaurante/AreaRestaurante.html" class="icon-back" aria-label="Voltar para a página inicial">
+                <i class="bi bi-arrow-left"></i>
+                <span class="visually-hidden">Voltar</span>
+            </a>
+        </div>
+        <section class="card-container">
+            <form>
+                <fieldset>
+                    <legend>Informações do Restaurante</legend>
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" id="logradouro" name="logradouro" placeholder="logradouro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero_casa">Número da casa:</label>
+                        <input type="text" id="numero_casa" name="numero_casa" placeholder="N°" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" placeholder="cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado" required>
+                            <option disabled selected>Estado</option>
+                            <option value="bombar">RJ</option>
+                            <option value="bombar">MG</option>
+                            <option value="bombar">SP</option>
+                            <option value="bombar">BH</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" placeholder="CEP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento" placeholder="complemento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="restaurante">Restaurante:</label>
+                        <select name="restaurante" id="restaurante" required>
+                            <option value="" disabled selected>Selecione o restaurante</option>
+                            <option value="bombar">Bombar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Salvar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante App</p>
+    </footer>
+</body>
+
+</html>

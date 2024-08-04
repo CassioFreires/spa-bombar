@@ -1,0 +1,195 @@
+/* Reseta o box-sizing e margens/paddings padrão */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estiliza o título do cabeçalho */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza o conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+    margin-top: 70px; /* Ajusta o espaço para o cabeçalho fixo */
+}
+.icon-back-page {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.icon-back {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-back .bi-arrow-left {
+    font-size: 1.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+/* Estiliza o título principal */
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estiliza o ícone de voltar */
+.icon-back-page {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.icon-back {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estiliza o contêiner de cartões */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estiliza o cartão */
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #333;
+    color: #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .card {
+        margin-top: 80px;
+    }
+
+}
+@media (min-width: 600px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
